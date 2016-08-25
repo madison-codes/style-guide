@@ -1,0 +1,123 @@
+$main-color: #8DC63F;
+$color2: black;
+$color3: grey;
+
+body {
+  background-color: grey;
+}
+
+
+nav {
+  background-color: black;
+  opacity: .7;
+  height: 0px;
+
+  width: 100%;
+}
+
+#menu-button-header-nav {
+  background: url(../styles/images/menu-button.svg) no-repeat;
+  background-color: white;
+  background-position: center;
+  padding: 20px;
+  border-right: 1px solid black;
+  border-left: 1px solid black;
+  border-bottom: 1px solid black;
+
+  border-bottom-right-radius:8px;
+  border-bottom-left-radius:8px;
+  height: 30px;
+  margin-left: 10%;
+  top: 0;
+  width: 50px;
+  position: fixed;
+}
+
+#header-nav {
+  background-color: black;
+  align-items: stretch;
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (min-width: 400px) {
+  nav {
+    height: 180px;
+    width: 100%;
+  }
+
+  #header-nav {
+    align-items: stretch;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  #main-nav-link-container {
+    margin-top: 70px;
+    height: 200;
+    width: 300px;
+  }
+
+  .logo-container {
+    display: none;
+  }
+
+  .main-nav-internal-container-links {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 75px;
+    margin-left: 40px;
+    width: 250px;
+  }
+
+  .main-nav-link {
+    color: grey;
+    height: 25px;
+    text-decoration: none;
+  }
+
+  .main-nav-link:hover {
+    color: $main-color;
+    text-decoration: none;
+    transition-duration: .2s;
+    transition-property: color;
+    transition-timing-function: ease-out;
+  }
+}
+@media (min-width: 600px) {
+  nav {
+    height: 70px;
+    width: 100%;
+  }
+
+  #menu-button-header-nav {
+    display: none;
+  }
+
+  #main-nav-link-container {
+    width: 70%;
+    margin-top: 25px;
+    height: 100%;
+    padding: 0;
+    display: block
+  }
+  .main-nav-internal-container-links{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .logo-container {
+    display: block;
+    width: 10%;
+    background-position: center;
+    border: none;
+    padding: 30px;
+    }
+
+    .header-container{
+      display: block;
+    }
+}
